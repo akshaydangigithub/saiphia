@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ring from "../assets/ring.png";
+import logo from "../assets/logo.png";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 
@@ -68,15 +68,15 @@ const Hero = () => {
         <h1>Saiphia</h1>
         <h1>Group</h1>
 
-        <img src={ring} alt="" className="ring" />
-        <div className="hero_content">
+        <img src={logo} alt="" className="ring" />
+        {/* <div className="hero_content">
           <h6 className="fw-bold text-white ">
             Saiphia Group is one of the fastest growing company in India &
             abroad providing Engineering and equipment manufacturing Services
             for Cement, Mining, Casting, Manufacturing, Bionics
             (Bio-mechanical), Power and Aerospace Engineering sectors
           </h6>
-        </div>
+        </div> */}
       </div>
       {/* <div className="spacer"></div> */}
     </>

@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #090909;
-  --color-white: #ffffff;
+  --color-primary: #f9e4e4;
+  --color-white: #321717;
 }
 
 * {
@@ -62,7 +62,7 @@ nav {
   }
 
   h1:nth-child(1) {
-    top: 15%;
+    top: 20%;
     left: 10%;
   }
 
@@ -79,6 +79,7 @@ nav {
     z-index: 1;
     height: 50%;
     object-fit: cover;
+    opacity: .2 !important;
   }
 
   .hero_content h6 {
