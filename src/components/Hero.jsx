@@ -32,7 +32,15 @@ const Hero = () => {
         "same"
       )
       .to(
-        "h1:nth-child(2)",
+        ".tag",
+        {
+          transform: "translateX(-100%)",
+          opacity: 0,
+        },
+        "same"
+      )
+      .to(
+        ".text2",
         {
           transform: "translateX(100%)",
           opacity: 0,
@@ -65,8 +73,30 @@ const Hero = () => {
   return (
     <>
       <div className="hero d-flex justify-content-end ">
-        <h1>Saiphia</h1>
-        <h1>Group</h1>
+        <h1>
+          Saiphia <br /> Group
+        </h1>
+        <h6 style={{ fontSize: 14 }} className="tag">
+          Our equipment, Services & system for you
+        </h6>
+        <h6 className="text2">
+          "Saiphia Group is one of the fastest growing company in India & abroad
+          providing Engineering and equipment manufacturing Services for Cement,
+          Mining, Casting, Manufacturing, Bionics (Bio-mechanical), Power and
+          Aerospace Engineering sectors"
+        </h6>
+
+        <div className="waveWrapper waveAnimation">
+          <div className="waveWrapperInner bgMiddle">
+            <div
+              className="wave waveMiddle"
+              style={{
+                backgroundImage:
+                  'url("http://front-end-noobs.com/jecko/img/wave-mid.png")',
+              }}
+            />
+          </div>
+        </div>
 
         <img src={logo} alt="" className="ring" />
         {/* <div className="hero_content">

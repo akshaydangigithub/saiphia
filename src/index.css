@@ -1,12 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,600;0,700;1,200;1,300;1,400&display=swap");
+
 :root {
-  --color-primary: #f9e4e4;
-  --color-white: #321717;
+  --color-primary: rgb(255, 255, 255);
+  --color-white: #0;
 }
 
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 html,
@@ -49,26 +52,45 @@ nav {
 .hero {
   min-height: 100vh;
   width: 100%;
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
+  background-image: url("https://img.freepik.com/free-vector/white-technology-background_23-2148390329.jpg?size=626&ext=jpg&ga=GA1.1.1766839354.1705585218&semt=ais");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   color: var(--color-white);
   /* overflow-x: hidden !important; */
 
   h1 {
-    font-size: 15vw;
+    font-size: 8vw;
     font-weight: bolder;
     line-height: 1;
     position: absolute;
     z-index: 99;
+    /* -webkit-text-stroke: var(--color-white);
+    -webkit-text-stroke-width: 3px;
+    color: transparent;
+    text-shadow: -5px -5px 0px var(--color-white); */
   }
 
   h1:nth-child(1) {
     top: 20%;
-    left: 10%;
+    left: 6%;
   }
 
-  h1:nth-child(2) {
-    top: 50%;
-    left: 40%;
+  .text2 {
+    position: absolute;
+    top: 75%;
+    left: 65%;
+    font-weight: bold;
+    width: 30%;
+  }
+
+  .tag{
+    position: absolute;
+    top: 52%;
+    left: 7%;
+    font-weight: bold;
+    width: 30%;
   }
 
   .ring {
@@ -77,9 +99,9 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    height: 50%;
+    height: 35%;
     object-fit: cover;
-    opacity: .2 !important;
+    opacity: 0.6 !important;
   }
 
   .hero_content h6 {
@@ -107,4 +129,74 @@ nav {
   height: 300px !important;
   width: 300px !important;
   background: red !important;
+}
+
+@keyframes move_wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25%) translateZ(0) scaleY(0.55);
+  }
+  100% {
+    transform: translateX(-50%) translateZ(0) scaleY(1);
+  }
+}
+.waveWrapper {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+}
+.waveWrapperInner {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  bottom: -20px;
+  /* background-image: linear-gradient(to top, #000000 20%, #27273c 80%); */
+}
+.bgTop {
+  z-index: 15;
+  opacity: 0.5;
+}
+.bgMiddle {
+  z-index: 10;
+  opacity: 0.75;
+}
+.bgBottom {
+  z-index: 5;
+}
+.wave {
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.waveTop {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+  -webkit-animation: move-wave 3s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.waveMiddle {
+  background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+  animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+  background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+  animation: move_wave 15s linear infinite;
 }
