@@ -13,10 +13,10 @@ const Cards = () => {
       },
       scrollTrigger: {
         trigger: ".cards",
-        start: "top bottom",
-        end: "bottom center",
+        start: "bottom bottom",
+        end: "bottom top",
         scrub: 1,
-        // markers: true,
+        markers: true,
       },
     });
 

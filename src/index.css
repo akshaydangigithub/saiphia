@@ -90,14 +90,14 @@ nav {
 }
 
 /* ===================cards=================== */
-
-/* .spacer {
+/* 
+.spacer {
   height: 50vh;
   background: var(--color-primary);
 } */
 
 .cards {
-  /* height: 70vh !important; */
+  height: 50vh !important;
   /* background: var(--color-primary); */
   background: var(--color-primary);
   /* margin-top: -2px; */
