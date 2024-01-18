@@ -78,7 +78,7 @@ const Hero = () => {
           </h6>
         </div>
       </div>
-      <div className="spacer"></div>
+      {/* <div className="spacer"></div> */}
     </>
   );
 };
