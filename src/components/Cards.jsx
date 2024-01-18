@@ -16,7 +16,7 @@ const Cards = () => {
         start: "bottom bottom",
         end: "bottom top",
         scrub: 1,
-        markers: true,
+        // markers: true,
       },
     });
 
@@ -32,8 +32,8 @@ const Cards = () => {
   }, []);
 
   return (
-    <div className="cards d-flex align-items-center justify-content-center">
-      <div className="cards_inner d-flex align-items-center justify-content-center gap-3">
+    <div className="cards d-flex justify-content-center">
+      <div className="cards_inner d-flex justify-content-center gap-3">
         <div className="card"></div>
         <div className="card"></div>
         <div className="card"></div>
