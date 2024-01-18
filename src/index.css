@@ -97,7 +97,7 @@ nav {
 }
 
 .cards {
-  height: 100vh !important;
+  height: 70vh !important;
   background: var(--color-primary);
   /* margin-top: -2px; */
 }
