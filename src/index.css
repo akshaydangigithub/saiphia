@@ -37,7 +37,7 @@ nav {
 
   .logo {
     > img {
-      width: 250px;
+      width: 60px;
       cursor: pointer;
     }
   }
@@ -166,7 +166,7 @@ nav {
   .ring {
     position: absolute;
     top: 50%;
-    left: 50% !important;
+    left: 40% !important;
     transform: translate(-50%, -50%);
     z-index: 1;
     height: 45%;
@@ -200,22 +200,131 @@ nav {
   }
 }
 
-/* ===================cards=================== */
+/* ===================About=================== */
 
 .spacer {
   height: 100vh;
   background: black;
 }
 
-.cards {
-  height: 100vh !important;
-  background: black;
-  /* margin-top: -2px; */
+.b-welcome .ui-title-slogan {
+  padding-top: 60px;
 }
-.card {
-  height: 300px !important;
-  width: 300px !important;
-  background: red !important;
+
+.b-welcome-list {
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.b-welcome-list__item .ic {
+  display: block;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+.b-share.section-default {
+  padding-bottom: 50px;
+}
+
+.section-default {
+  position: relative;
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.section-default-sm {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-default-sm .ui-title-inner {
+  margin-bottom: 30px;
+}
+
+.section-default.b-welcome {
+  padding-top: 0;
+  padding-bottom: 80px;
+  margin-top: 4vmax;
+}
+
+.text-slogan .ui-title {
+  margin-bottom: 0;
+}
+
+.text-slogan h2.ui-title {
+  font-weight: 500;
+  padding-bottom: 0;
+  line-height: 46px;
+}
+
+.text-slogan h3.ui-title {
+  font-weight: 800;
+  margin-bottom: 14px;
+  position: relative;
+  display: inline-block;
+  letter-spacing: 1.2px;
+}
+
+.text-slogan h3.ui-title.title-decore:after {
+  display: inline-block;
+  content: "";
+  background-color: #ffe0b1;
+  width: 100%;
+  padding: 5px;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  z-index: -1;
+}
+
+.text-slogan blockquote {
+  display: inline-block;
+  border-left: 4px solid red;
+  padding-left: 25px;
+  font-weight: 600;
+  margin-bottom: 35px;
+}
+
+.text-slogan .ui-title-slogan {
+  margin-bottom: 13px;
+}
+
+.b-goods-vip__main .text-slogan .ui-title-btn {
+  padding: 7px 20px;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+.b-goods-vip__main .text-slogan h2.ui-title {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.b-goods-vip__main .text-slogan h3.ui-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.b-destinations .text-slogan {
+  color: #fff;
+  position: relative;
+  z-index: 7;
+}
+
+.b-destinations .text-slogan h3.ui-title,
+.b-destinations .text-slogan h2.ui-title,
+.b-destinations .text-slogan .ui-title-slogan {
+  color: #fff;
+}
+
+.text-slogan .ui-title {
+  margin-bottom: 0;
+}
+
+.text-slogan h2.ui-title {
+  font-weight: 500;
+  padding-bottom: 0;
+  line-height: 46px;
 }
 
 /* ===================== wave =================== */
@@ -246,7 +355,7 @@ nav {
   width: 100%;
   overflow: hidden;
   height: 100%;
-  bottom: -20px;
+  bottom: -5 0px;
   /* background-image: linear-gradient(to top, #000000 20%, #27273c 80%); */
 }
 .bgTop {
@@ -289,4 +398,64 @@ nav {
 }
 .waveAnimation .waveBottom {
   animation: move_wave 15s linear infinite;
+}
+
+/* =================== Cards =================== */
+
+.cards {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 5rem;
+}
+
+.card_cu {
+  height: 320px !important;
+  width: 320px !important;
+  border-radius: 50% !important;
+  animation: cardAnimation 1s ease-in-out infinite alternate;
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .cards_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.74);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover{
+      opacity: 1;
+    }
+
+    button{
+      padding: 10px 30px;
+      border: none;
+      color: var(--color-sedcondary);
+      background: var(--color-primary);
+      font-weight: bold;
+    }
+  }
+}
+
+@keyframes cardAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
 }

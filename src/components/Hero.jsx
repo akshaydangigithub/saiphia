@@ -8,7 +8,6 @@ const Hero = () => {
   const ctx = {};
 
   useLayoutEffect(() => {
-
     gsap.registerPlugin(ScrollTrigger);
 
     ctx.timeline = gsap.timeline({
@@ -55,7 +54,7 @@ const Hero = () => {
           opacity: 0,
         },
         "same"
-      );
+      )
 
     return () => {
       ctx.timeline.kill();
@@ -65,6 +64,7 @@ const Hero = () => {
   return (
     <>
       <div className="hero d-flex justify-content-end ">
+     
         <div className="content">
           <h1>
             Saiphia <br /> Group
