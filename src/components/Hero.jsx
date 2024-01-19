@@ -1,15 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useLayoutEffect } from "react";
 import logo from "../assets/logo.png";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { IoMdPlay } from "react-icons/io";
 
 const Hero = () => {
   const ctx = {};
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+
     gsap.registerPlugin(ScrollTrigger);
 
-    // Create a GSAP timeline for the H1 and ring animations
     ctx.timeline = gsap.timeline({
       scrollTrigger: {
         trigger: ".hero",
@@ -21,18 +22,9 @@ const Hero = () => {
       },
     });
 
-    // Animate the first h1
     ctx.timeline
       .to(
-        "h1:nth-child(1)",
-        {
-          transform: "translateX(-100%)",
-          opacity: 0,
-        },
-        "same"
-      )
-      .to(
-        ".tag",
+        ".content",
         {
           transform: "translateX(-100%)",
           opacity: 0,
@@ -51,8 +43,9 @@ const Hero = () => {
         ".ring",
         {
           rotationY: 180,
+          scale: 3,
           opacity: 0,
-          scale: 4,
+          // display: "none",
         },
         "same"
       )
@@ -64,21 +57,29 @@ const Hero = () => {
         "same"
       );
 
-    // Return a cleanup function to clear the animations
     return () => {
-      ctx.timeline.kill(); // Kill the animations
+      ctx.timeline.kill();
     };
   }, []);
 
   return (
     <>
       <div className="hero d-flex justify-content-end ">
-        <h1>
-          Saiphia <br /> Group
-        </h1>
-        <h6 style={{ fontSize: 14 }} className="tag">
-          Our equipment, Services & system for you
-        </h6>
+        <div className="content">
+          <h1>
+            Saiphia <br /> Group
+          </h1>
+          <h6>Our equipment, Services & system for you</h6>
+
+          <div className="d-flex align-items-center gap-5 mt-5">
+            <button className="py-2 px-4">Contact us</button>
+            <div className="play d-flex align-items-center justify-content-center">
+              <IoMdPlay className="fs-4" />
+              <span class="ripple"></span>
+            </div>
+          </div>
+        </div>
+
         <h6 className="text2">
           "Saiphia Group is one of the fastest growing company in India & abroad
           providing Engineering and equipment manufacturing Services for Cement,
@@ -98,17 +99,9 @@ const Hero = () => {
           </div>
         </div>
 
-        <img src={logo} alt="" className="ring" />
-        {/* <div className="hero_content">
-          <h6 className="fw-bold text-white ">
-            Saiphia Group is one of the fastest growing company in India &
-            abroad providing Engineering and equipment manufacturing Services
-            for Cement, Mining, Casting, Manufacturing, Bionics
-            (Bio-mechanical), Power and Aerospace Engineering sectors
-          </h6>
-        </div> */}
+        <img src={logo} alt="logo" className="ring" />
       </div>
-      {/* <div className="spacer"></div> */}
+      <div className="spacer"></div>
     </>
   );
 };

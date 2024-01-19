@@ -2,7 +2,7 @@
 
 :root {
   --color-primary: rgb(255, 255, 255);
-  --color-white: #0;
+  --color-sedcondary: rgb(0, 23, 60);
 }
 
 * {
@@ -28,7 +28,7 @@ body {
 /* ===================nav=================== */
 
 nav {
-  color: var(--color-white);
+  color: var(--color-sedcondary);
   position: fixed;
   top: 0;
   left: 0;
@@ -52,29 +52,106 @@ nav {
 .hero {
   min-height: 100vh;
   width: 100%;
-  /* background: var(--color-primary); */
   background-image: url("https://img.freepik.com/free-vector/white-technology-background_23-2148390329.jpg?size=626&ext=jpg&ga=GA1.1.1766839354.1705585218&semt=ais");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: var(--color-white);
-  /* overflow-x: hidden !important; */
+  color: var(--color-sedcondary);
+  overflow: hidden;
 
-  h1 {
-    font-size: 8vw;
-    font-weight: bolder;
-    line-height: 1;
+  .content {
+    position: relative;
+    height: fit-content;
+    width: fit-content;
     position: absolute;
-    z-index: 99;
-    /* -webkit-text-stroke: var(--color-white);
-    -webkit-text-stroke-width: 3px;
-    color: transparent;
-    text-shadow: -5px -5px 0px var(--color-white); */
-  }
-
-  h1:nth-child(1) {
     top: 20%;
     left: 6%;
+
+    h1 {
+      font-size: 8vw;
+      font-weight: bolder;
+      line-height: 1;
+    }
+
+    h6 {
+      font-weight: bold;
+      margin-top: 2vmax;
+    }
+
+    button {
+      font-weight: 600;
+      background: var(--color-sedcondary);
+      color: var(--color-primary);
+      border: none;
+      cursor: pointer;
+    }
+
+    .play {
+      height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background: var(--color-sedcondary);
+      cursor: pointer;
+      position: relative;
+
+      > svg {
+        color: var(--color-primary);
+        /* -webkit-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.5);
+        -moz-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.5);
+        -ms-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.5);
+        -o-box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.5);
+        box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.5); */
+      }
+
+      .ripple,
+      .ripple::before,
+      .ripple::after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 45px;
+        width: 45px;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        -webkit-transform-origin: center;
+        transform-origin: center center;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 0 0 0 var(--color-sedcondary);
+        -moz-box-shadow: 0 0 0 0 var(--color-sedcondary);
+        -ms-box-shadow: 0 0 0 0 var(--color-sedcondary);
+        -o-box-shadow: 0 0 0 0 var(--color-sedcondary);
+        box-shadow: 0 0 0 0 var(--color-sedcondary);
+        -webkit-animation: ripple 3s infinite;
+        -moz-animation: ripple 3s infinite;
+        -ms-animation: ripple 3s infinite;
+        -o-animation: ripple 3s infinite;
+        animation: ripple 3s infinite;
+      }
+
+      .ripple:before {
+        -webkit-animation-delay: 0.9s;
+        -moz-animation-delay: 0.9s;
+        -ms-animation-delay: 0.9s;
+        -o-animation-delay: 0.9s;
+        animation-delay: 0.9s;
+        content: "";
+        position: absolute;
+      }
+
+      .ripple:after {
+        -webkit-animation-delay: 0.6s;
+        -moz-animation-delay: 0.6s;
+        -ms-animation-delay: 0.6s;
+        -o-animation-delay: 0.6s;
+        animation-delay: 0.6s;
+        content: "";
+        position: absolute;
+      }
+    }
   }
 
   .text2 {
@@ -83,25 +160,18 @@ nav {
     left: 65%;
     font-weight: bold;
     width: 30%;
-  }
-
-  .tag{
-    position: absolute;
-    top: 52%;
-    left: 7%;
-    font-weight: bold;
-    width: 30%;
+    z-index: 999;
   }
 
   .ring {
     position: absolute;
     top: 50%;
-    left: 40%;
+    left: 50% !important;
     transform: translate(-50%, -50%);
     z-index: 1;
-    height: 35%;
+    height: 45%;
     object-fit: cover;
-    opacity: 0.6 !important;
+    /* opacity: 0.8 !important; */
   }
 
   .hero_content h6 {
@@ -112,17 +182,34 @@ nav {
   }
 }
 
+@-webkit-keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes ripple {
+  70% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
 /* ===================cards=================== */
-/* 
+
 .spacer {
-  height: 50vh;
-  background: var(--color-primary);
-} */
+  height: 100vh;
+  background: black;
+}
 
 .cards {
-  height: 68vh !important;
-  /* background: var(--color-primary); */
-  background: var(--color-primary);
+  height: 100vh !important;
+  background: black;
   /* margin-top: -2px; */
 }
 .card {
@@ -130,6 +217,8 @@ nav {
   width: 300px !important;
   background: red !important;
 }
+
+/* ===================== wave =================== */
 
 @keyframes move_wave {
   0% {
@@ -150,6 +239,7 @@ nav {
   bottom: 0;
   top: 0;
   margin: auto;
+  pointer-events: none;
 }
 .waveWrapperInner {
   position: absolute;
