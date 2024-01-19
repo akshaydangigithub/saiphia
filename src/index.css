@@ -166,7 +166,7 @@ nav {
   .ring {
     position: absolute;
     top: 50%;
-    left: 40% !important;
+    left: 38% !important;
     transform: translate(-50%, -50%);
     z-index: 1;
     height: 45%;

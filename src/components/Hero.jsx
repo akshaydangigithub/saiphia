@@ -101,7 +101,7 @@ const Hero = () => {
 
         <img src={logo} alt="logo" className="ring" />
       </div>
-      <div className="spacer"></div>
+      {/* <div className="spacer"></div> */}
     </>
   );
 };
