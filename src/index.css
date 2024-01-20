@@ -169,7 +169,7 @@ nav {
     left: 50% !important; */
     /* transform: translate(-50%, -50%) !important; */
     z-index: 1;
-    height: 28vw;
+    height: 26vw;
     object-fit: cover;
     /* opacity: 0.8 !important; */
   }
@@ -200,135 +200,12 @@ nav {
   }
 }
 
-/* ===================About=================== */
-
 .spacer {
   height: 100vh;
-  background: black;
+  background: var(--color-primary);
 }
-
-.b-welcome .ui-title-slogan {
-  padding-top: 60px;
-}
-
-.b-welcome-list {
-  margin-top: 30px;
-  margin-bottom: 32px;
-}
-
-.b-welcome-list__item .ic {
-  display: block;
-  margin-bottom: 30px;
-  font-size: 50px;
-}
-
-.b-share.section-default {
-  padding-bottom: 50px;
-}
-
-.section-default {
-  position: relative;
-  padding-top: 110px;
-  padding-bottom: 110px;
-}
-
-.section-default-sm {
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.section-default-sm .ui-title-inner {
-  margin-bottom: 30px;
-}
-
-.section-default.b-welcome {
-  padding-top: 0;
-  padding-bottom: 80px;
-  margin-top: 4vmax;
-}
-
-.text-slogan .ui-title {
-  margin-bottom: 0;
-}
-
-.text-slogan h2.ui-title {
-  font-weight: 500;
-  padding-bottom: 0;
-  line-height: 46px;
-}
-
-.text-slogan h3.ui-title {
-  font-weight: 800;
-  margin-bottom: 14px;
-  position: relative;
-  display: inline-block;
-  letter-spacing: 1.2px;
-}
-
-.text-slogan h3.ui-title.title-decore:after {
-  display: inline-block;
-  content: "";
-  background-color: #ffe0b1;
-  width: 100%;
-  padding: 5px;
-  position: absolute;
-  bottom: 2px;
-  left: 0;
-  z-index: -1;
-}
-
-.text-slogan blockquote {
-  display: inline-block;
-  border-left: 4px solid red;
-  padding-left: 25px;
-  font-weight: 600;
-  margin-bottom: 35px;
-}
-
-.text-slogan .ui-title-slogan {
-  margin-bottom: 13px;
-}
-
-.b-goods-vip__main .text-slogan .ui-title-btn {
-  padding: 7px 20px;
-  font-size: 13px;
-  margin-top: 8px;
-}
-
-.b-goods-vip__main .text-slogan h2.ui-title {
-  font-size: 28px;
-  font-weight: 400;
-}
-
-.b-goods-vip__main .text-slogan h3.ui-title {
-  font-size: 28px;
-  font-weight: 600;
-}
-
-.b-destinations .text-slogan {
-  color: #fff;
-  position: relative;
-  z-index: 7;
-}
-
-.b-destinations .text-slogan h3.ui-title,
-.b-destinations .text-slogan h2.ui-title,
-.b-destinations .text-slogan .ui-title-slogan {
-  color: #fff;
-}
-
-.text-slogan .ui-title {
-  margin-bottom: 0;
-}
-
-.text-slogan h2.ui-title {
-  font-weight: 500;
-  padding-bottom: 0;
-  line-height: 46px;
-}
-
 /* ===================== wave =================== */
-
+/* 
 @keyframes move_wave {
   0% {
     transform: translateX(0) translateZ(0) scaleY(1);
@@ -356,7 +233,6 @@ nav {
   overflow: hidden;
   height: 100%;
   bottom: -5 0px;
-  /* background-image: linear-gradient(to top, #000000 20%, #27273c 80%); */
 }
 .bgTop {
   z-index: 15;
@@ -398,6 +274,73 @@ nav {
 }
 .waveAnimation .waveBottom {
   animation: move_wave 15s linear infinite;
+} */
+
+/* =================== ABout =================== */
+.about {
+  min-height: 120vh;
+  width: 100%;
+  background: var(--color-sedcondary);
+  color: var(--color-primary);
+  padding-top: 10vmax !important;
+  padding-left: 6vmax;
+  padding-right: 6vmax;
+  padding-bottom: 3vmax;
+
+  .about-content {
+    position: relative;
+    z-index: 9;
+
+    h5 {
+      font-weight: 500;
+    }
+
+    h3 {
+      font-weight: 600;
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
+
+    .about_faq {
+      max-height: 60px;
+      transition: all ease .5s !important;
+      overflow: hidden;
+      .about_faq_inner {
+        height: 60px;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all ease .5s !important;
+      }
+    }
+  }
+}
+
+.about_faq.active {
+  max-height: 500px !important;
+  transition: all ease .5s !important;
+}
+
+.edge-top-figure-1 {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 15%;
+  overflow: hidden;
+  background: var(--color-primary);
+  z-index: 1;
+}
+.edge-top-figure-1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 160%;
+  height: 520%;
+  background: var(--color-sedcondary);
+  border-radius: 100%;
 }
 
 /* =================== Cards =================== */
@@ -422,7 +365,7 @@ nav {
   background-position: center;
   background-repeat: no-repeat;
 
-  .cards_overlay{
+  .cards_overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -437,11 +380,11 @@ nav {
     transition: 0.5s;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       opacity: 1;
     }
 
-    button{
+    button {
       padding: 10px 30px;
       border: none;
       color: var(--color-sedcondary);

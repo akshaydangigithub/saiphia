@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { IoMdPlay } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const ctx = {};
@@ -54,7 +55,7 @@ const Hero = () => {
           opacity: 0,
         },
         "same"
-      )
+      );
 
     return () => {
       ctx.timeline.kill();
@@ -64,30 +65,56 @@ const Hero = () => {
   return (
     <>
       <div className="hero d-flex align-items-center justify-content-center">
-     
         <div className="content">
-          <h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.5, type: "spring" }}
+          >
             Saiphia <br /> Group
-          </h1>
-          <h6>Our equipment, Services & system for you</h6>
+          </motion.h1>
+          <motion.h6
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.7, type: "spring" }}
+          >
+            Our equipment, Services & system for you
+          </motion.h6>
 
           <div className="d-flex align-items-center gap-5 mt-5">
-            <button className="py-2 px-4">Contact us</button>
-            <div className="play d-flex align-items-center justify-content-center">
+            <motion.button
+              className="py-2 px-4"
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.8, type: "spring" }}
+            >
+              Contact us
+            </motion.button>
+            <motion.div
+              className="play d-flex align-items-center justify-content-center"
+              initial={{ opacity: 0, y: 100 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.9, type: "spring" }}
+            >
               <IoMdPlay className="fs-4" />
               <span class="ripple"></span>
-            </div>
+            </motion.div>
           </div>
         </div>
 
-        <h6 className="text2">
+        <motion.h6
+          className="text2"
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 1, type: "spring" }}
+        >
           "Saiphia Group is one of the fastest growing company in India & abroad
           providing Engineering and equipment manufacturing Services for Cement,
           Mining, Casting, Manufacturing, Bionics (Bio-mechanical), Power and
           Aerospace Engineering sectors"
-        </h6>
+        </motion.h6>
 
-        <div className="waveWrapper waveAnimation">
+        {/* <div className="waveWrapper waveAnimation">
           <div className="waveWrapperInner bgMiddle">
             <div
               className="wave waveMiddle"
@@ -97,7 +124,7 @@ const Hero = () => {
               }}
             />
           </div>
-        </div>
+        </div> */}
 
         <img src={logo} alt="logo" className="ring" />
       </div>

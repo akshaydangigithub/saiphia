@@ -5,12 +5,13 @@ import About from "../components/About";
 import Cards from "../components/Cards";
 
 const Homepage = () => {
+  
   return (
     <>
       <Navbar />
       <Hero />
-      <Cards />
       <About />
+      <Cards />
     </>
   );
 };
