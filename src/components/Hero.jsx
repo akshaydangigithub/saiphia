@@ -42,7 +42,7 @@ const Hero = () => {
         ".ring",
         {
           rotationY: 180,
-          scale: 3,
+          scale: "3 !important",
           opacity: 0,
           // display: "none",
         },
@@ -63,7 +63,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero d-flex justify-content-end ">
+      <div className="hero d-flex align-items-center justify-content-center">
      
         <div className="content">
           <h1>
