@@ -102,17 +102,12 @@ const Hero = () => {
           </div>
         </div>
 
-        <motion.h6
-          className="text2"
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1, type: "spring" }}
-        >
+        <h6 className="text2">
           "Saiphia Group is one of the fastest growing company in India & abroad
           providing Engineering and equipment manufacturing Services for Cement,
           Mining, Casting, Manufacturing, Bionics (Bio-mechanical), Power and
           Aerospace Engineering sectors"
-        </motion.h6>
+        </h6>
 
         {/* <div className="waveWrapper waveAnimation">
           <div className="waveWrapperInner bgMiddle">
