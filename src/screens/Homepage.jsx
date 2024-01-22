@@ -7,6 +7,7 @@ import Services from "../components/Services";
 import Success from "../components/Success";
 import Certificate from "../components/Certificate";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Homepage = () => {
   
@@ -20,6 +21,7 @@ const Homepage = () => {
       <Certificate />
       <Cards />
       <Contact />
+      <Footer />
     </>
   );
 };

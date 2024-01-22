@@ -7,6 +7,7 @@ import {
   FaRegEnvelope,
   FaWhatsapp,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -19,19 +20,27 @@ const Contact = () => {
                 style={{
                   height: 40,
                   width: 5,
-                  backgroundColor: "#44CE30",
+                  backgroundColor: "var(--color-sedcondary)",
                   marginTop: 20,
                 }}
               ></div>
-              <h3 style={{ marginTop: 30, marginLeft: 10, fontWeight: 500 }}>
+              <h3
+                style={{
+                  marginTop: 30,
+                  marginLeft: 10,
+                  fontWeight: 500,
+                  color: "--color-sedcondary",
+                }}
+              >
                 Need Help?
               </h3>
             </div>
-            <a
+            <Link
               href="#"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#000" }}
+              className="text-decoration-none"
             >
               <Card className="whatsappcard rounded-4 shadow">
                 <div
@@ -44,8 +53,11 @@ const Contact = () => {
                   <FaWhatsapp size={30} style={{ color: "#44CE30" }} />
                   <div style={{ marginLeft: "20px", width: "100%" }}>
                     <h6
-                      className="text-decoration-none"
-                      style={{ fontWeight: 600, marginTop: 15 }}
+                      style={{
+                        fontWeight: 600,
+                        marginTop: 15,
+                        color: "--color-sedcondary",
+                      }}
                     >
                       Ask us on Whatsapp!
                     </h6>
@@ -58,12 +70,13 @@ const Contact = () => {
                   </div>
                 </div>
               </Card>
-            </a>
-            <a
+            </Link>
+            <Link
               href="#"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: "#000" }}
+              className="text-decoration-none"
             >
               <Card className="whatsappcard rounded-4 shadow">
                 <div
@@ -94,10 +107,15 @@ const Contact = () => {
                   </div>
                 </div>
               </Card>
-            </a>
+            </Link>
             <Row>
               <Col>
-                <a href="#" target="_blank" style={{ color: "#000" }}>
+                <Link
+                  href="#"
+                  target="_blank"
+                  style={{ color: "#000" }}
+                  className="text-decoration-none"
+                >
                   <Card className="whatsappcard rounded-4 shadow">
                     <div
                       style={{
@@ -120,7 +138,7 @@ const Contact = () => {
                       </div>
                     </div>
                   </Card>
-                </a>
+                </Link>
               </Col>
             </Row>
           </Card>

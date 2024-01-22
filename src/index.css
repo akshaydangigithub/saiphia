@@ -335,24 +335,49 @@ nav {
 /* =================== Cards =================== */
 
 .cards {
-  height: 80vh;
+  height: 50vh;
   width: 100%;
   display: flex;
+  /* background: red; */
   align-items: center;
   gap: 3rem;
   padding: 0 5rem;
+}
+
+.card_line {
+  height: 100%;
+  width: 120%;
+  /* background: var(--color-sedcondary); */
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../src/assets/line.png");
+  /* background-repeat: repeat-x; */
+  background-size: 100%;
+  animation: line 5s linear infinite;
+  background-position: center;
+}
+
+.card_cus {
+  border: 3px dashed #00173c61;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card_cu {
   height: 220px !important;
   width: 220px !important;
   border-radius: 50% !important;
-  animation: cardAnimation 1s ease-in-out infinite alternate;
+  /* animation: cardAnimation 1s ease-in-out infinite alternate; */
   position: relative;
-  background-image: url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  /* background-image: url(""); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  border: 3px solid var(--color-sedcondary);
 
   .cards_overlay {
     position: absolute;
