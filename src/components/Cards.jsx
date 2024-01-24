@@ -10,7 +10,7 @@ const Cards = () => {
         </div>
       </div>
       <div
-        className="cards position-relative d-flex align-items-center justify-content-center px-5"
+        className="cards position-relative d-flex align-items-center justify-content-center px-5 pb-5"
         style={{ gap: "10vmax" }}
       >
         <div className="card_line"></div>
