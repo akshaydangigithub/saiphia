@@ -14,48 +14,49 @@ const Cards = () => {
         style={{ gap: "10vmax" }}
       >
         <div className="card_line"></div>
-        <div className="card_cus">
-          <div
-            className="card_cu shadow d-flex align-items-center justify-content-center"
-            style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
-            }}
-          >
-            <div className="cards_overlay flex-column">
-              <p className="fw-bold mb-3 text-white">Saiphia Casting</p>
-              <button className="rounded-4">Visit Website</button>
-            </div>
+
+        <div className="cards_main">
+          <div className="card2 position-relative">
+            <div
+              className="card_inner"
+              style={{
+                backgroundImage:
+                  "url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+              }}
+            ></div>
+            <p className="fw-bold mb-2 mt-3 text-center">Saiphia Casting</p>
+            <button className="rounded-4 d-block mx-auto">Visit Website</button>
           </div>
         </div>
-        <div className="card_cus">
-          <div
-            className="card_cu shadow d-flex align-items-center justify-content-center"
-            style={{
-              backgroundImage:
-                "url('https://saiphia.com/wp-content/uploads/2020/05/buildings.jpg')",
-            }}
-          >
-            <div className="cards_overlay flex-column">
-              <p className="fw-bold mb-3 text-white">Saiphia Technology</p>
-              <button className="rounded-4">Visit Website</button>
-            </div>
+
+        <div className="cards_main">
+          <div className="card2 position-relative">
+            <div
+              className="card_inner"
+              style={{
+                backgroundImage:
+                  "url('https://saiphia.com/wp-content/uploads/2020/05/buildings.jpg')",
+              }}
+            ></div>
+            <p className="fw-bold mb-2 mt-3 text-center">Saiphia Technology</p>
+            <button className="rounded-4 d-block mx-auto">Visit Website</button>
           </div>
         </div>
-        <div className="card_cus">
-          <div
-            className="card_cu shadow d-flex align-items-center justify-content-center"
-            style={{
-              backgroundImage:
-                "url('https://saiphia.com/wp-content/uploads/2020/06/rsz_technology.jpg')",
-            }}
-          >
-            <div className="cards_overlay flex-column">
-              <p className="fw-bold mb-3 text-white">SaiphiaDus</p>
-              <button className="rounded-4">Visit Website</button>
-            </div>
+
+        <div className="cards_main">
+          <div className="card2 position-relative">
+            <div
+              className="card_inner"
+              style={{
+                backgroundImage:
+                  "url('https://saiphia.com/wp-content/uploads/2020/06/rsz_technology.jpg')",
+              }}
+            ></div>
+            <p className="fw-bold mb-2 mt-3 text-center">SaiphiaDus</p>
+            <button className="rounded-4 d-block mx-auto">Visit Website</button>
           </div>
         </div>
+
       </div>
     </>
   );

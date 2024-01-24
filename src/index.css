@@ -50,7 +50,7 @@ nav {
 /* ===================hero=================== */
 
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-image: url("https://img.freepik.com/free-vector/white-technology-background_23-2148390329.jpg?size=626&ext=jpg&ga=GA1.1.1766839354.1705585218&semt=ais");
   background-repeat: no-repeat;
@@ -334,6 +334,33 @@ nav {
 
 /* =================== Cards =================== */
 
+.card2 {
+  height: 235px;
+  width: 235px;
+  border: 3px dashed #00173c61;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+
+  > .card_inner {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 3px solid var(--color-sedcondary);
+  }
+
+  button {
+    padding: 10px 30px;
+    border: none;
+    color: var(--color-primary);
+    background: var(--color-sedcondary);
+    font-weight: bold;
+  }
+}
+
 .cards {
   height: 50vh;
   width: 100%;
@@ -357,55 +384,6 @@ nav {
   background-size: 100%;
   animation: line 5s linear infinite;
   background-position: center;
-}
-
-.card_cus {
-  border: 3px dashed #00173c61;
-  padding: 5px;
-  border-radius: 50%;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
-}
-
-.card_cu {
-  height: 220px !important;
-  width: 220px !important;
-  border-radius: 50% !important;
-  /* animation: cardAnimation 1s ease-in-out infinite alternate; */
-  position: relative;
-  /* background-image: url(""); */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border: 3px solid var(--color-sedcondary);
-
-  .cards_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    background: rgba(0, 0, 0, 0.74);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: 0.5s;
-    cursor: pointer;
-
-    &:hover {
-      opacity: 1;
-    }
-
-    button {
-      padding: 10px 30px;
-      border: none;
-      color: var(--color-sedcondary);
-      background: var(--color-primary);
-      font-weight: bold;
-    }
-  }
 }
 
 @keyframes cardAnimation {
