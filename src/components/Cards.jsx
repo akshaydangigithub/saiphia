@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Cards = () => {
   return (
@@ -17,6 +18,7 @@ const Cards = () => {
 
         <div className="cards_main">
           <div className="card2 position-relative">
+            <div className="card2_border"></div>
             <div
               className="card_inner"
               style={{
@@ -25,12 +27,17 @@ const Cards = () => {
               }}
             ></div>
             <p className="fw-bold mb-2 mt-3 text-center">Saiphia Casting</p>
-            <button className="rounded-4 d-block mx-auto">Visit Website</button>
+            <Link to="https://saiphia-casting.netlify.app/" className="text-decoration-none">
+              <button className="rounded-4 d-block mx-auto">
+                Visit Website
+              </button>
+            </Link>
           </div>
         </div>
 
         <div className="cards_main">
           <div className="card2 position-relative">
+            <div className="card2_border"></div>
             <div
               className="card_inner"
               style={{
@@ -45,6 +52,7 @@ const Cards = () => {
 
         <div className="cards_main">
           <div className="card2 position-relative">
+            <div className="card2_border"></div>
             <div
               className="card_inner"
               style={{
@@ -56,7 +64,6 @@ const Cards = () => {
             <button className="rounded-4 d-block mx-auto">Visit Website</button>
           </div>
         </div>
-
       </div>
     </>
   );
