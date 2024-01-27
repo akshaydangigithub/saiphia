@@ -31,6 +31,9 @@ const Homepage = () => {
         notificationDelay={60000}
         avatar={logo}
       />
+      <div className="download_bro d-flex align-items-center justify-content-center">
+        <h6 className="m-0 fw-semibold">Download Our brochure</h6>
+      </div>
     </>
   );
 };

@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Cards = () => {
   return (
     <>
-      <div className="row" style={{ paddingLeft: "5vmax" }}>
+      <div className="row" style={{ paddingLeft: "5vmax", width: "100vw" }}>
         <div className="col services_head position-relative">
           <h5 className="fw-semibold m-0">Our Companies :-</h5>
           <h2 className="fw-bold mt-2">Some of Our Best Ventures</h2>
@@ -27,7 +27,10 @@ const Cards = () => {
               }}
             ></div>
             <p className="fw-bold mb-2 mt-3 text-center">Saiphia Casting</p>
-            <Link to="https://saiphia-casting.netlify.app/" className="text-decoration-none">
+            <Link
+              to="https://saiphia-casting.netlify.app/"
+              className="text-decoration-none"
+            >
               <button className="rounded-4 d-block mx-auto">
                 Visit Website
               </button>

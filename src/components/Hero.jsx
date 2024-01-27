@@ -59,7 +59,7 @@ const Hero = () => {
             Our equipment, Services & system for you
           </motion.h6>
 
-          <div className="d-flex align-items-center gap-5 mt-5">
+          <div className="d-flex align-items-center gap-5 mt-md-5 mt-3">
             <motion.button
               className="py-2 px-4"
               initial={{ opacity: 0, y: 100 }}

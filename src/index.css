@@ -25,6 +25,26 @@ body {
   background: var(--color-primary);
 }
 
+.download_bro {
+  height: 240px;
+  cursor: pointer;
+  width: 50px;
+  background: var(--color-sedcondary);
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: var(--color-primary);
+  white-space: nowrap;
+  z-index: 999;
+
+  >h6{
+    display: inline-block;
+    transform: rotate(-90deg);
+    word-spacing: 7px;
+  }
+}
+
 /* ===================nav=================== */
 
 nav {
@@ -42,8 +62,10 @@ nav {
     }
   }
 
-  h5 {
+  h6 {
     cursor: pointer;
+    background: var(--color-sedcondary);
+    color: var(--color-primary);
   }
 }
 
@@ -347,6 +369,7 @@ nav {
   background-size: cover;
   background-position: center;
   position: relative;
+  overflow: hidden;
 
   .service_icon {
     height: 40px;
@@ -650,16 +673,26 @@ nav {
   .about_img2 {
     right: -5% !important;
     top: 61% !important;
+    height: 200px !important;
+    width: 200px !important;
   }
   .ring {
-    height: 57vw !important;
+    height: 60vw !important;
   }
   .content {
     top: 12% !important;
-    left: 20% !important;
+    left: 7% !important;
   }
-  .text2{
-    width: 80% !important;
-    left: 10% !important;
+  .text2 {
+    top: 85% !important;
+    width: 93% !important;
+    left: 3% !important;
+  }
+  .success {
+    height: 80vh !important;
+
+    .back_img {
+      height: 100% !important;
+    }
   }
 }

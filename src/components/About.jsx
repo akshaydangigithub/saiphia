@@ -47,8 +47,8 @@ const About = () => {
             so. Him everything melancholy uncommonly but solicitude inhabiting
             projection.
           </p>
-          <div className="d-flex align-items-center gap-5">
-            <button className="border-0 py-2 px-4">CONTACT US</button>
+          <div className="d-flex flex-md-row flex-column-reverse align-md-items-center gap-md-5">
+            <button className="border-0 py-2 px-4 mt-md-0 mt-3">CONTACT US</button>
             <div>
               <p className="m-0 mb-1">Get Free Estimate</p>
               <h6 className="fw-bold">+91 87545 65465</h6>
