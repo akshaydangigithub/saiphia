@@ -90,8 +90,8 @@ const Success = () => {
           alt=""
         />
       </div>
-      <div className="row success_row px-5 py-5">
-        <div className="col-md-3 d-flex align-items-center justify-content-center flex-column">
+      <div className="row success_row h-100 px-5">
+        <div className="col-3 d-flex align-items-center justify-content-center flex-column">
           <div className="s_icon d-flex align-items-center justify-content-center">
             <FaPeopleRobbery className="fs-3 text-black" />
           </div>
@@ -100,7 +100,7 @@ const Success = () => {
           </h3>
           <h6 className="fw-bold text-white">Years Experiance</h6>
         </div>
-        <div className="col-md-3 d-flex align-items-center justify-content-center flex-column">
+        <div className="col-3 d-flex align-items-center justify-content-center flex-column">
           <div className="s_icon d-flex align-items-center justify-content-center">
             <FaPeopleRobbery className="fs-3 text-black" />
           </div>
@@ -109,7 +109,7 @@ const Success = () => {
           </h3>
           <h6 className="fw-bold text-white">Project done</h6>
         </div>
-        <div className="col-md-3 d-flex align-items-center justify-content-center flex-column">
+        <div className="col-3 d-flex align-items-center justify-content-center flex-column">
           <div className="s_icon d-flex align-items-center justify-content-center">
             <FaPeopleRobbery className="fs-3 text-black" />
           </div>
@@ -118,7 +118,7 @@ const Success = () => {
           </h3>
           <h6 className="fw-bold text-white">Happy clients</h6>
         </div>
-        <div className="col-md-3 d-flex align-items-center justify-content-center flex-column">
+        <div className="col-3 d-flex align-items-center justify-content-center flex-column">
           <div className="s_icon d-flex align-items-center justify-content-center">
             <FaPeopleRobbery className="fs-3 text-black" />
           </div>

@@ -8,7 +8,7 @@ const Navbar = () => {
         <img src={logo} alt="" />
         {/* <h3 className="fw-bold">LOGO</h3> */}
       </div>
-      <h5>Menu</h5>
+      <h5 className="fw-bold">Menu</h5>
     </nav>
   );
 };

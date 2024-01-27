@@ -11,56 +11,34 @@ const Hero = () => {
   useLayoutEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    ctx.timeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".hero",
-        start: "top top",
-        // end: "bottom += 1000px",
-        scrub: 1,
-        pin: true,
-        // markers: true,
-      },
-    });
+    // Check if the screen width is greater than 768 pixels (adjust as needed)
+    const isDesktop = window.innerWidth > 768;
 
-    ctx.timeline
-      .to(
-        ".content",
-        {
-          transform: "translateX(-100%)",
-          opacity: 0,
+    if (isDesktop) {
+      ctx.timeline = gsap.timeline({
+        scrollTrigger: {
+          trigger: ".hero",
+          start: "top top",
+          scrub: 1,
+          pin: true,
         },
-        "same"
-      )
-      .to(
-        ".text2",
-        {
-          transform: "translateX(100%)",
-          opacity: 0,
-        },
-        "same"
-      )
-      .to(
-        ".ring",
-        {
-          rotationY: 180,
-          scale: "3 !important",
-          opacity: 0,
-          // display: "none",
-        },
-        "same"
-      )
-      .to(
-        ".hero_content",
-        {
-          opacity: 0,
-        },
-        "same"
-      );
+      });
 
-    return () => {
-      ctx.timeline.kill();
-    };
-  }, []);
+      ctx.timeline
+        .to(".content", { transform: "translateX(-100%)", opacity: 0 }, "same")
+        .to(".text2", { transform: "translateX(100%)", opacity: 0 }, "same")
+        .to(
+          ".ring",
+          { rotationY: 180, scale: "3 !important", opacity: 0 },
+          "same"
+        )
+        .to(".hero_content", { opacity: 0 }, "same");
+
+      return () => {
+        ctx.timeline.kill();
+      };
+    }
+  }, []); // Empty dependency array ensures that this effect runs only once on component mount
 
   return (
     <>
@@ -71,7 +49,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.5, type: "spring" }}
           >
-            Saiphia <br /> Group
+            Saiphia <br className="d-md-block d-none" /> Group
           </motion.h1>
           <motion.h6
             initial={{ opacity: 0, y: 100 }}

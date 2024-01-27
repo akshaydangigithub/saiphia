@@ -23,7 +23,7 @@ const Services = () => {
       </div>
 
       <div className="row px-5 mt-5">
-        <div className="col-md-3 ">
+        <div className="col-md-3 mt-md-0">
           <motion.div
             className="d-flex services_div position-relative align-items-center gap-4 bg-white shadow py-3 px-3 rounded-4"
             initial={{ scale: 0, opacity: 0 }}
@@ -40,7 +40,7 @@ const Services = () => {
             <h6 className="fw-semibold m-0">Power</h6>
           </motion.div>
         </div>
-        <div className="col-md-3 ">
+        <div className="col-md-3 mt-md-0 mt-4">
           <motion.div
             className="d-flex services_div position-relative align-items-center gap-4 bg-white shadow py-3 px-3 rounded-4"
             initial={{ scale: 0, opacity: 0 }}
@@ -58,7 +58,7 @@ const Services = () => {
           </motion.div>
         </div>
 
-        <div className="col-md-3 ">
+        <div className="col-md-3 mt-md-0 mt-4">
           <motion.div
             className="d-flex services_div position-relative align-items-center gap-4 bg-white shadow py-3 px-3 rounded-4"
             initial={{ scale: 0, opacity: 0 }}
@@ -76,7 +76,7 @@ const Services = () => {
           </motion.div>
         </div>
 
-        <div className="col-md-3 ">
+        <div className="col-md-3 mt-md-0 mt-4">
           <motion.div
             className="d-flex services_div position-relative align-items-center gap-4 bg-white shadow py-3 px-3 rounded-4"
             initial={{ scale: 0, opacity: 0 }}

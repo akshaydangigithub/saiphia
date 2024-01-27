@@ -11,12 +11,12 @@ const Cards = () => {
         </div>
       </div>
       <div
-        className="cards position-relative d-flex align-items-center justify-content-center px-5 pb-5"
+        className="cards position-relative d-md-flex align-items-center justify-content-center px-5 pb-5"
         style={{ gap: "7vmax" }}
       >
-        <div className="card_line"></div>
+        <div className="card_line d-md-block d-none"></div>
 
-        <div className="cards_main">
+        <div className="cards_main d-flex justify-content-center mb-md-0 mb-5">
           <div className="card2 position-relative">
             <div className="card2_border"></div>
             <div
@@ -35,7 +35,7 @@ const Cards = () => {
           </div>
         </div>
 
-        <div className="cards_main">
+        <div className="cards_main d-flex justify-content-center mb-md-0 mb-5">
           <div className="card2 position-relative">
             <div className="card2_border"></div>
             <div
@@ -50,7 +50,7 @@ const Cards = () => {
           </div>
         </div>
 
-        <div className="cards_main">
+        <div className="cards_main d-flex justify-content-center mb-md-0 mb-5">
           <div className="card2 position-relative">
             <div className="card2_border"></div>
             <div

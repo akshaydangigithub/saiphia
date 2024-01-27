@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 const Certificate = () => {
   return (
     <div className="certificate">
-      <div className="px-5 py-5 d-flex align-items-center justify-content-between">
-        <div className="">
+      <div className="px-5 py-5 d-md-flex align-items-center justify-content-between">
+        <div className="mb-md-0 mb-4">
           <div className="certi position-relative overflow-hidden">
             <motion.img
               className=""
@@ -20,7 +20,7 @@ const Certificate = () => {
             />
           </div>
         </div>
-        <div className="">
+        <div className="mb-md-0 mb-4">
           <div className="certi">
             <motion.img
               className=""
@@ -32,7 +32,7 @@ const Certificate = () => {
             />
           </div>
         </div>
-        <div className="">
+        <div className="mb-md-0 mb-4">
           <div className="certi overflow-hidden">
             <motion.img
               src={c3}

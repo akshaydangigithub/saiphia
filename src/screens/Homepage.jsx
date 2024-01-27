@@ -8,9 +8,10 @@ import Success from "../components/Success";
 import Certificate from "../components/Certificate";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
+import { FloatingWhatsApp } from "react-floating-whatsapp";
+import logo from "../assets/logo.png";
 
 const Homepage = () => {
-  
   return (
     <>
       <Navbar />
@@ -22,6 +23,14 @@ const Homepage = () => {
       <Cards />
       <Contact />
       <Footer />
+      <FloatingWhatsApp
+        phoneNumber="918435119144"
+        accountName="SHAIPHIA"
+        allowClickAway
+        notification
+        notificationDelay={60000}
+        avatar={logo}
+      />
     </>
   );
 };
