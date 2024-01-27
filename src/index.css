@@ -342,6 +342,11 @@ nav {
 
 .services {
   width: 100%;
+  background-image: url("../src/assets/back2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
 
   .service_icon {
     height: 40px;
