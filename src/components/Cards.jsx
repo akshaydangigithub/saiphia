@@ -49,7 +49,14 @@ const Cards = () => {
               }}
             ></div>
             <p className="fw-bold mb-2 mt-3 text-center">Saiphia Technology</p>
-            <button className="rounded-4 d-block mx-auto">Visit Website</button>
+            <Link
+              to="https://saiphia-technology.netlify.app/"
+              className="text-decoration-none"
+            >
+              <button className="rounded-4 d-block mx-auto">
+                Visit Website
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -64,7 +71,14 @@ const Cards = () => {
               }}
             ></div>
             <p className="fw-bold mb-2 mt-3 text-center">SaiphiaDus</p>
-            <button className="rounded-4 d-block mx-auto">Visit Website</button>
+            <Link
+              to="https://saiphiadus.netlify.app/"
+              className="text-decoration-none"
+            >
+              <button className="rounded-4 d-block mx-auto">
+                Visit Website
+              </button>
+            </Link>
           </div>
         </div>
       </div>
