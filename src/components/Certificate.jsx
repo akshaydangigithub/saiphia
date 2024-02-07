@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Certificate = () => {
   return (
-    <div className="certificate">
+    <div className="certificate pt-5 pb-5">
       <div className="px-5 py-5 d-md-flex align-items-center justify-content-between">
         <div className="mb-md-0 mb-4">
           <div className="certi position-relative overflow-hidden">

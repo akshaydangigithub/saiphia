@@ -2,6 +2,9 @@ import React, { useLayoutEffect, useRef, useState } from "react";
 import { FaPeopleRobbery } from "react-icons/fa6";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { AiFillLike } from "react-icons/ai";
+import { MdWorkHistory } from "react-icons/md";
+import { FaUsers } from "react-icons/fa";
 
 const Success = () => {
   const firstCount = useRef(null);
@@ -86,46 +89,46 @@ const Success = () => {
     <div className="success position-relative">
       <div className="back_img">
         <img
-          src="https://images.unsplash.com/photo-1588011930968-eadac80e6a5a?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          src="https://images.unsplash.com/photo-1521111756787-d2f69136cedf?w=2069&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGZhY3RvcnklMjBidWlsZGluZ3xlbnwwfHwwfHx8MA%3D%3D"
           alt=""
         />
       </div>
       <div className="row success_row h-100 px-5">
         <div className="col-md-3 d-flex align-items-center justify-content-center flex-column">
-          <div className="s_icon d-flex align-items-center justify-content-center">
-            <FaPeopleRobbery className="fs-3 text-black" />
+          <div className="s_icon d-flex align-items-center justify-content-center" style={{border:'2px solid #00173C'}}>
+            <MdWorkHistory color="#17A134" className="fs-3 " />
           </div>
-          <h3 className="fw-bold text-white mt-3" ref={firstCount}>
+          <h3 className="fw-bold text-dark mt-3" ref={firstCount}>
             {firstCountValue}+
           </h3>
-          <h6 className="fw-bold text-white">Years Experiance</h6>
+          <h6 className="fw-bold text-dark">Years Experiance</h6>
         </div>
         <div className="col-md-3 d-flex align-items-center justify-content-center flex-column">
-          <div className="s_icon d-flex align-items-center justify-content-center">
-            <FaPeopleRobbery className="fs-3 text-black" />
+          <div className="s_icon d-flex align-items-center justify-content-center" style={{border:'2px solid #00173C'}}>
+            <AiFillLike color="#17A134" className="fs-3" />
           </div>
-          <h3 className="fw-bold text-white mt-3" ref={secondCount}>
+          <h3 className="fw-bold text-dark mt-3" ref={secondCount}>
             {secondCountValue}+
           </h3>
-          <h6 className="fw-bold text-white">Project done</h6>
+          <h6 className="fw-bold text-dark">Project done</h6>
         </div>
         <div className="col-md-3 d-flex align-items-center justify-content-center flex-column">
-          <div className="s_icon d-flex align-items-center justify-content-center">
-            <FaPeopleRobbery className="fs-3 text-black" />
+          <div className="s_icon d-flex align-items-center justify-content-center" style={{border:'2px solid #00173C'}}>
+            <FaPeopleRobbery color="#17A134" className="fs-3" />
           </div>
-          <h3 className="fw-bold text-white mt-3" ref={thirdCount}>
+          <h3 className="fw-bold text-dark mt-3" ref={thirdCount}>
             {thirdCountValue}+
           </h3>
-          <h6 className="fw-bold text-white">Happy clients</h6>
+          <h6 className="fw-bold text-dark">Happy clients</h6>
         </div>
         <div className="col-md-3 d-flex align-items-center justify-content-center flex-column">
-          <div className="s_icon d-flex align-items-center justify-content-center">
-            <FaPeopleRobbery className="fs-3 text-black" />
+          <div className="s_icon d-flex align-items-center justify-content-center" style={{border:'2px solid #00173C'}}>
+            <FaUsers color="#17A134" className="fs-3" />
           </div>
-          <h3 className="fw-bold text-white mt-3" ref={fourthCount}>
+          <h3 className="fw-bold text-dark mt-3" ref={fourthCount}>
             {fourthCountValue}+
           </h3>
-          <h6 className="fw-bold text-white">Experts member</h6>
+          <h6 className="fw-bold text-dark">Experts member</h6>
         </div>
       </div>
     </div>

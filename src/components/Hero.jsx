@@ -56,7 +56,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.7, type: "spring" }}
           >
-            Our equipment, Services & system for you
+            Our equipment, <span style={{color:'#17A134'}}>Services & system </span>  for you
           </motion.h6>
 
           <div className="d-flex align-items-center gap-5 mt-md-5 mt-3">
@@ -81,10 +81,14 @@ const Hero = () => {
         </div>
 
         <h6 className="text2">
-          "Saiphia Group is one of the fastest growing company in India & abroad
-          providing Engineering and equipment manufacturing Services for Cement,
-          Mining, Casting, Manufacturing, Bionics (Bio-mechanical), Power and
-          Aerospace Engineering sectors"
+        <span style={{color:'#17A134'}}> "Saiphia Group</span>   is a beacon of growth, rapidly emerging as a leading entity in India and
+beyond. Renowned for delivering top-tier Engineering and equipment manufacturing
+services, our influence spans key sectors such as Cement, Mining, Casting,
+Manufacturing, Bionics (Bio-mechanical), Power, and Aerospace Engineering. With an
+unwavering commitment to excellence, we propel industries forward through
+cutting-edge solutions, marking our ascent as a powerhouse in the global business
+landscape.
+"
         </h6>
 
         {/* <div className="waveWrapper waveAnimation">

@@ -6,8 +6,8 @@ const Cards = () => {
     <>
       <div className="row" style={{ paddingLeft: "5vmax", width: "100vw" }}>
         <div className="col services_head position-relative">
-          <h5 className="fw-semibold m-0">Our Companies :-</h5>
-          <h2 className="fw-bold mt-2">Some of Our Best Ventures</h2>
+          <h5 className="fw-semibold m-0" style={{color:'#17A134'}}>Our Companies :-</h5>
+          <h2 className="fw-bold mt-2">Saiphia Group: Powering <span style={{color:'#17A134'}}>Progress</span> Across <br /> Three Vital Sectors.</h2>
         </div>
       </div>
       <div
